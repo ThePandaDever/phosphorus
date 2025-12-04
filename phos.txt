@@ -5861,11 +5861,11 @@ void layouts.chromeLike.main.init()
 // debug tabs
 if true (
   local document @= shared.document.Document()
-  void document.loadUrl(shared.url.Url("local://~/projects/phosphorus/main.rwl"))
+  void document.loadUrl(shared.url.Url("local://./main.rwl"))
   void layouts.shared.state.openTabDocument(document)
   
   local document2 @= shared.document.Document()
-  void document2.loadUrl(shared.url.Url("local://~/projects/phosphorus/test.rwl"))
+  void document2.loadUrl(shared.url.Url("local://./test.rwl"))
   void layouts.shared.state.openTabDocument(document2)
 ) else (
   void layouts.shared.state.openEmptyTab()
